@@ -19,6 +19,7 @@ export default function Home() {
       <Flex 
       backgroundImage="url('Scattered-Forcefields.svg')" 
       backgroundPosition="center"
+      bgAttachment="fixed"
       backgroundRepeat="repeat"
       bgSize="auto"
       color="teal.200" direction="column" align="center" justify="center" height="100vh">
