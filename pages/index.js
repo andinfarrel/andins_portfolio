@@ -3,6 +3,7 @@ import {
   Box, 
   Divider, 
   Flex, 
+  Text,
 } from '@chakra-ui/react'
 
 
@@ -18,22 +19,24 @@ export default function Home() {
       <Flex 
       backgroundImage="url('Scattered-Forcefields.svg')" 
       backgroundPosition="center"
-      bgAttachment="fixed"
-      backgroundRepeat="no-repeat"
-      bgSize="100%"
+      backgroundRepeat="repeat"
+      bgSize="auto"
       color="teal.200" direction="column" align="center" justify="center" height="100vh">
         <NameTitle />
       </Flex>
       <Divider />
-      <Box 
+      <Flex align="center" justify="center" 
       backgroundImage="url('Abstract-Timekeeper.svg')"
       backgroundPosition="center"
       bgAttachment="fixed"
       backgroundRepeat="no-repeat"
-      bgSize="100%"
+      bgSize="cover"
       minH="100vh">
+        <Box p={8} bg="teal.200" borderRadius="lg">
+          <Text bg="transluscent" as="em" fontSize="5xl">Coming Soon</Text>
 
-      </Box>
+        </Box>
+      </Flex>
     </Box>
   )
 }
